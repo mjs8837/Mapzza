@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.poi {
+    background-image: url('../images/pizza.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.poi:hover {
+    width: 50px;
+    height: 50px;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#controls {
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    right: 130px;
+    width: 130px;
+    height: 120px;
+    height:auto;
+}
+
+#listDiv {
+    visibility: hidden;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    top: 280px;
+    right: 10px;
+    height: 120px;
+    height:auto;
+}
+
+#pizzaList {
+    width: 300px;
+}
+
+#controls button, select {
+    font-family: 'Poppins', sans-serif;
+    text-align-last: center;
+    position: relative;
+    width: 250px;
+    margin: 5px;
+    top: 3px;
+    border: 1px solid #000;
+    background: #fff;
+    text-align: center;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#controls button:hover {
+    color: rgb(36, 36, 36);
+    background-color: rgb(126, 126, 126);
+}
+
+#info {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+li {
+    padding: 2px;
+}
+
+li:hover {
+    cursor: pointer;
+    color: red;
+}
+
+footer {
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 50%;
+}

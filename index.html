@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8' />
+    <title>Mapzza</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1' />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel='icon' href='images/pizza.png'>
+    <link rel="stylesheet" type="text/css" href="styles/default-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
+    <script src="./src/loader.js" type="module"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+</head>
+<body>
+
+<main>
+
+<div id='map'></div>
+
+<nav>
+    <div id="controls">
+        <button id="btn1">Set Home Location</button>
+        <button id="btn2">Set Marker to Center</button>
+        <button id="btn3">Show List of Pizza Places</button>
+        <button id="btn4">Reset</button>
+
+        <select id="rating">
+            <option value="0">Any Rating</option>
+            <option value="1">1 star</option>
+            <option value="2">2 stars</option>
+            <option value="3">3 stars</option>
+            <option value="4">4 stars</option>
+            <option value="5">5 stars</option>
+        </select>  
+    </div>
+</nav>
+
+<nav>
+    <div id="listDiv">
+        <ul id="pizzaList"></ul>
+        <p id="info">Click any of the pizza place names above to zoom in on them</p>
+    </div>
+</nav>
+
+</main>
+
+<footer>&copy; Mike Santos and Nick Arcaro 2020</footer>
+
+</body>
+</html>
